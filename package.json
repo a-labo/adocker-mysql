@@ -1,6 +1,6 @@
 {
   "name": "adocker-mysql",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Docker mysql utility",
   "main": "lib",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/a-labo/adocker-mysql#readme",
   "dependencies": {
-    "adocker": "^1.4.1",
+    "adocker": "^1.4.2",
     "co": "^4.6.0"
   },
   "devDependencies": {
