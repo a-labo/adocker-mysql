@@ -22,12 +22,10 @@ describe('adocker-mysql', function () {
   it('Adocker mysql', () => co(function * () {
     let mysql = adockerMysql('adocker-mysql-test-01')
 
-    let { run, remove, logs, call } = mysql.cli()
+    let { run, remove, logs } = mysql.cli()
     yield run()
     yield logs()
     yield remove({ force: true })
-
-    yield call([])
   }))
 })
 

@@ -1,6 +1,6 @@
 {
   "name": "adocker-mysql",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Docker mysql utility",
   "main": "lib",
   "scripts": {
@@ -8,7 +8,9 @@
     "prepublish": "node ./ci/build.js"
   },
   "repository": "a-labo/adocker-mysql",
-  "keywords": [],
+  "keywords": [
+    "Docker"
+  ],
   "author": {
     "name": "Taka Okunishi",
     "email": "okunishinishi@gmail.com",
