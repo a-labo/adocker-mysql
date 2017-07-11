@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/a-labo/adocker-mysql#readme",
   "dependencies": {
-    "adocker": "^2.0.0",
+    "adocker": "^2.0.3",
     "asfs": "^1.2.3",
     "co": "^4.6.0"
   },
