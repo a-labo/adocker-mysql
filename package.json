@@ -1,6 +1,6 @@
 {
   "name": "adocker-mysql",
-  "version": "3.0.6",
+  "version": "4.0.0",
   "description": "Docker mysql utility",
   "main": "lib",
   "scripts": {
@@ -23,22 +23,21 @@
   "homepage": "https://github.com/a-labo/adocker-mysql#readme",
   "dependencies": {
     "adocker": "^2.0.3",
-    "asfs": "^1.2.3",
-    "co": "^4.6.0"
+    "asfs": "^2.0.1"
   },
   "devDependencies": {
-    "amocha": "^2.0.0",
+    "amocha": "^3.0.0",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-reporting": "^3.0.2",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^5.0.20",
+    "ape-tmpl": "^6.0.1",
     "ape-updating": "^4.1.1",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0"
   },
   "engines": {
-    "node": ">=6",
+    "node": ">=7.6",
     "npm": ">=3"
   }
 }

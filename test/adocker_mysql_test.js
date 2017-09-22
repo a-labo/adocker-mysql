@@ -5,41 +5,40 @@
 'use strict'
 
 const adockerMysql = require('../lib/adocker_mysql.js')
-const { equal } = require('assert')
-const co = require('co')
+const {equal} = require('assert')
 
 describe('adocker-mysql', function () {
   this.timeout(500000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Adocker mysql', () => co(function * () {
-    let mysql = adockerMysql('adocker-mysql-test-01')
+  it('Adocker mysql', async () => {
+    const mysql = adockerMysql('adocker-mysql-test-01')
 
-    let { run, remove, logs, stop, isRunning, hasBuild } = mysql.cli()
+    const {run, remove, logs, stop, isRunning, hasBuild} = mysql.cli()
 
-    equal(yield isRunning(), false)
-    equal(yield hasBuild(), false)
-    yield run()
+    equal(await isRunning(), false)
+    equal(await hasBuild(), false)
+    await run()
 
-    equal(yield isRunning(), true)
-    equal(yield hasBuild(), true)
+    equal(await isRunning(), true)
+    equal(await hasBuild(), true)
 
-    yield logs()
+    await logs()
 
-    yield stop()
+    await stop()
 
-    equal(yield isRunning(), false)
-    equal(yield hasBuild(), true)
+    equal(await isRunning(), false)
+    equal(await hasBuild(), true)
 
-    yield remove({ force: true })
-  }))
+    await remove({force: true})
+  })
 })
 
 /* global describe, before, after, it */
