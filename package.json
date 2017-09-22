@@ -1,11 +1,11 @@
 {
   "name": "adocker-mysql",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Docker mysql utility",
   "main": "lib",
   "scripts": {
     "test": "node ./ci/test.js",
-    "prepublish": "node ./ci/build.js"
+    "prepare": "node ./ci/build.js"
   },
   "repository": "a-labo/adocker-mysql",
   "keywords": [
@@ -38,6 +38,6 @@
   },
   "engines": {
     "node": ">=7.6",
-    "npm": ">=3"
+    "npm": ">=4"
   }
 }
