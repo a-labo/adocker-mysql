@@ -1,9 +1,8 @@
 'use strict'
 
-const co = require('co')
 const adockerMysql = require('adocker-mysql')
 
-let mysql = adockerMysql('my-mysql-container-01', {
+const mysql = adockerMysql('my-mysql-container-01', {
   onError: (err) => {
     // Error handler for each commands
     console.error(err)
@@ -11,15 +10,15 @@ let mysql = adockerMysql('my-mysql-container-01', {
   }
 })
 
-let { run, start, stop, remove, logs } = mysql.cli()
-co(function * () {
-  yield run()
+const {run, start, stop, remove, logs} = mysql.cli()
+;(async () => {
+  await run()
   /* ... */
-  yield logs()
+  await logs()
   /* ... */
-  yield stop()
+  await stop()
   /* ... */
-  yield start()
+  await start()
 
-  yield remove({ force: true })
-})
+  await remove({force: true})
+})()

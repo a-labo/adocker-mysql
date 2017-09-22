@@ -1,6 +1,6 @@
 {
   "name": "adocker-mysql",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Docker mysql utility",
   "main": "lib",
   "scripts": {
